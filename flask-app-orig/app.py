@@ -1,4 +1,3 @@
-import os
 from flask import Flask
 
 from pages import (
@@ -14,16 +13,10 @@ from pages import (
 )
 
 import models
-from flask_wtf.csrf import CSRFProtect
 
 ### Initialize App
 app = Flask(__name__)
 app.url_map.strict_slashes = False
-
-### Enable CSRF
-app.config['SECRET_KEY'] = os.urandom(32)
-csrf = CSRFProtect()
-csrf.init_app(app)
 
 ### Register blueprints
 app.register_blueprint(index.bp)

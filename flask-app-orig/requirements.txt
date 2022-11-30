@@ -9,5 +9,6 @@ Jinja2==3.0.1
 MarkupSafe==2.0.1
 six==1.16.0
 SQLAlchemy==1.4.19
-Werkzeug==2.1.1
+Werkzeug==2.0.1
 Flask-WTF==0.15.1
+wdb==3.3.0

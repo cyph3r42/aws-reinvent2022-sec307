@@ -12,7 +12,6 @@
                 </div>
                   <div class="col-md-10 mx-auto col-lg-5">
                     <form class="p-4 p-md-5 border rounded-3 bg-light" action="/owasp/A5/auth" method="POST">
-                      <input type="hidden" name="csrf_token" value="{{ csrf_token() }}"/>
                       <div class="form-floating mb-3">
                         <input type="text" class="form-control" id="floatingInput" name="username">
                         <label for="floatingInput">Username</label>
